@@ -12,12 +12,12 @@ This repository demonstrates how to set up a simple Redis Master-Slave replicati
 1. **Clone the repository** (if applicable):
 
    ```bash
-   git clone <repo-url>
-   cd <repo-folder>
+   git clone https://github.com/shahin-shahin/redis-implement.git
+   cd redis-implement
 
 Start the containers:
 
-    docker-compose up -d
+    docker-compose -f redis-master-slave-replication-docker-compose.yml up
 
     Verify setup:
 
@@ -42,6 +42,6 @@ On the host, these volumes are located under:
 
 To stop and remove all resources:
 
-docker-compose down -v
+docker-compose -f redis-master-slave-replication-docker-compose.yml down -v
 
 
