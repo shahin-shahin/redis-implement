@@ -36,12 +36,13 @@ Start the containers:
 On the host, these volumes are located under:
 
 /var/lib/docker/volumes/redis_master/_data
+
 /var/lib/docker/volumes/redis_slave/_data
 
 🧹 Cleanup
 
 To stop and remove all resources:
 
-docker-compose -f redis-master-slave-replication-docker-compose.yml down -v
+docker-compose -f redis-master-slave-replication-docker-compose.yml down
 
 
